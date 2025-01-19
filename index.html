@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festive Planners - Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="logo (2).png" alt="Festive Planners Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#birthday">Birthday Decoration</a></li>
+                            <li><a class="dropdown-item" href="#babyshower">Baby Shower</a></li>
+                            <li><a class="dropdown-item" href="#ganpati">Ganpati Decoration</a></li>
+                            <li><a class="dropdown-item" href="#navratri">Navratri Decoration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="jumbotron jumbotron-fluid text-center">
+        <div id="headerSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Slider1.jpg" class="d-block w-100" alt="Event 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Slider2.jpg?height=400&width=1600" class="d-block w-100" alt="Event 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Slider3.jpg" class="d-block w-100" alt="Event 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#headerSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#headerSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container header-content">
+            <h1 class="display-4">Welcome to Jay Ganesh Event Planners</h1>
+            <p class="lead">We make your events memorable!</p>
+        </div>
+    </header>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card service-card">
+                        <img src="Baby Shower.webp" class="card-img-top" alt="Baby Shower">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Shower</h5>
+                            <p class="card-text">Celebrate the arrival of your little one with our beautiful decorations.</p>
+                            <button class="btn btn-primary view-packages" data-bs-toggle="modal" data-bs-target="#babyShowerModal">View Packages</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card service-card">
+                        <img src="Ganpati.webp" class="card-img-top" alt="Ganpati Decoration">
+                        <div class="card-body">
+                            <h5 class="card-title">Ganpati Decoration</h5>
+                            <p class="card-text">Welcome Lord Ganesha with our stunning decorations.</p>
+                            <button class="btn btn-primary view-packages" data-bs-toggle="modal" data-bs-target="#ganpatiModal">View Packages</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card service-card">
+                        <img src="Navratri.png" class="card-img-top" alt="Navratri Decoration">
+                        <div class="card-body">
+                            <h5 class="card-title">Navratri Decoration</h5>
+                            <p class="card-text">Celebrate the festival of nine nights with our colorful decorations.</p>
+                            <button class="btn btn-primary view-packages" data-bs-toggle="modal" data-bs-target="#navratriModal">View Packages</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card service-card">
+                        <img src="Birthday.png" class="card-img-top" alt="Birthday Decoration">
+                        <div class="card-body">
+                            <h5 class="card-title">Birthday Decoration</h5>
+                            <p class="card-text">Make your birthday special with our fun and exciting decorations.</p>
+                            <button class="btn btn-primary view-packages" data-bs-toggle="modal" data-bs-target="#birthdayModal">View Packages</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-ad" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="cc.jpeg" alt="Featured Event" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-4 mb-4">Experience Magic</h2>
+                    <p class="lead mb-4">Transform your special day into an unforgettable experience with our expert event planning services.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <section class="hero-section">
+            <div class="decorative-hearts">
+                <span class="heart heart-coral">♥</span>
+                <span class="heart heart-mint">♥</span>
+            </div>
+            <img src="mandala" alt="" class="mandala-icon">
+            <h1 class="hero-title">Includes Various<br>Product Categories</h1>
+            <p class="hero-text">कार्यक्रम कुठलाही असो, सदैव लक्षात राहण्यासाठी Jay Ganesh Events Management..!</p>
+            
+        </section>
+
+        <section class="categories-section">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="weddingwalls.jpg" alt="Luxury Wedding Walls" class="category-img">
+                    <h3 class="category-title">Luxury Wedding Walls</h3>
+                </div>
+                <div class="category-card">
+                    <img src="metal_circles-2.jpg" alt="Elegant Metal Circles & Flowers" class="category-img">
+                    <h3 class="category-title">Elegant Floral Designs</h3>
+                </div>
+                <div class="category-card">
+                    <img src="chair.jpg" alt="Premium Chairs" class="category-img">
+                    <h3 class="category-title">Premium Seating</h3>
+                </div>
+                <div class="category-card">
+                    <img src="Catering.jpg" alt="Gourmet Catering" class="category-img">
+                    <h3 class="category-title">Gourmet Catering</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <!-- Modals for each service -->
+    <div class="modal fade" id="babyShowerModal" tabindex="-1" aria-labelledby="babyShowerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="babyShowerModalLabel">Baby Shower Packages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Basic Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Package</h5>
+                                    <p class="card-text">Simple and elegant decorations for your baby shower.</p>
+                                    <p class="card-text"><strong>Price: $299</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Deluxe Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deluxe Package</h5>
+                                    <p class="card-text">Beautiful decorations with added features and customization.</p>
+                                    <p class="card-text"><strong>Price: $499</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Premium Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Premium Package</h5>
+                                    <p class="card-text">Luxurious decorations with all the bells and whistles.</p>
+                                    <p class="card-text"><strong>Price: $799</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat similar modal structure for Ganpati, Navratri, and Birthday decorations -->
+    <div class="modal fade" id="ganpatiModal" tabindex="-1" aria-labelledby="ganpatiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ganpatiModalLabel">Ganpati Decoration Packages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Basic Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Package</h5>
+                                    <p class="card-text">Simple and traditional Ganpati decorations.</p>
+                                    <p class="card-text"><strong>Price: $399</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Deluxe Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deluxe Package</h5>
+                                    <p class="card-text">Elaborate decorations with flowers and lighting.</p>
+                                    <p class="card-text"><strong>Price: $699</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Premium Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Premium Package</h5>
+                                    <p class="card-text">Grand decorations with themed setup and professional lighting.</p>
+                                    <p class="card-text"><strong>Price: $999</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="navratriModal" tabindex="-1" aria-labelledby="navratriModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="navratriModalLabel">Navratri Decoration Packages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Basic Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Package</h5>
+                                    <p class="card-text">Colorful decorations for small Navratri gatherings.</p>
+                                    <p class="card-text"><strong>Price: $349</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Deluxe Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deluxe Package</h5>
+                                    <p class="card-text">Elaborate setup with traditional elements and lighting.</p>
+                                    <p class="card-text"><strong>Price: $649</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Premium Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Premium Package</h5>
+                                    <p class="card-text">Grand decorations for large Navratri events with stage setup.</p>
+                                    <p class="card-text"><strong>Price: $949</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="birthdayModal" tabindex="-1" aria-labelledby="birthdayModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="birthdayModalLabel">Birthday Decoration Packages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Basic Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Package</h5>
+                                    <p class="card-text">Simple and fun decorations for a birthday party.</p>
+                                    <p class="card-text"><strong>Price: $249</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Deluxe Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deluxe Package</h5>
+                                    <p class="card-text">Themed decorations with balloons and customized elements.</p>
+                                    <p class="card-text"><strong>Price: $449</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="/placeholder.svg?height=150&width=200" class="card-img-top" alt="Premium Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Premium Package</h5>
+                                    <p class="card-text">Extravagant setup with professional decor and entertainment.</p>
+                                    <p class="card-text"><strong>Price: $749</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="add">
+        <h2 class="text-center mb-5">आमच्याकडे सर्व प्रकाराच्या आकर्षक इवेंट्सची कामे योग्य दरात केली जातील </h2>
+        <div class="equipment-grid">
+            <!-- Top Row -->
+            <div class="equipment-item">
+                <img src="Flloed Light.jpeg" alt="Flood Lights" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Flood Lights</h3>
+                    <p>Professional LED flood lighting for events</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="Led Light.webp" alt="Led Lights" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Led Lights</h3>
+                    <p>High-quality LED PAR lighting systems</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="Sharpy Light.jpg" alt="Sharpy Lights" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Sharpy Lights</h3>
+                    <p>Professional moving head beam lights</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="Paper Blast.avif" alt="Paper Blast Machine" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Paper Blast Machine</h3>
+                    <p>High-power confetti blast effects</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="cold pyro.jpg" alt="Cold Pyro Stand" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Cold Pyro Stand</h3>
+                    <p>Safe and spectacular pyrotechnic effects</p>
+                </div>
+            </div>
+            
+            <!-- Bottom Row -->
+            <div class="equipment-item">
+                <img src="fog matka.jpg" alt="Fog Matka" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Fog Matka</h3>
+                    <p>Professional fog generation system</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="co2 jet.jpeg" alt="CO2 Jet" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>CO2 Jet</h3>
+                    <p>High-powered CO2 special effects</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="An-36-channel.webp" alt="AN 36 Channel" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>AN 36 Channel</h3>
+                    <p>Professional control system</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="fan wheel.webp" alt="2 Side Fanwheel" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>2 Side Fanwheel</h3>
+                    <p>Multi-directional CO2 effects</p>
+                </div>
+            </div>
+            <div class="equipment-item">
+                <img src="cold pyro gun.jpg" alt="Cold Pyro Gun" class="equipment-image">
+                <div class="equipment-overlay">
+                    <h3>Cold Pyro Gun</h3>
+                    <p>Handheld pyrotechnic effects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-form-container">
+                        <h2 class="text-center mb-4 d">Get in Touch</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" id="service" required>
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="birthday">Birthday Decoration</option>
+                                    <option value="babyshower">Baby Shower</option>
+                                    <option value="ganpati">Ganpati Decoration</option>
+                                    <option value="navratri">Navratri Decoration</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container text-centers">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Jay Ganesh Event Planners</h5>
+                    <p>We make your events memorable! From birthdays to festivals, we've got you covered.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Stay Connected</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Marisoft IT Park, Pune</p>
+                    <p><i class="fas fa-phone"></i> 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9efffcfddef9f3fff7f2b0fdf1f3">[email&#160;protected]</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <hr class="mb-4">
+            <div class="text-centers">
+                <p>&copy; 2025 Jay Ganesh Event Planners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
