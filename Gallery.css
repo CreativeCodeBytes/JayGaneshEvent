@@ -1,0 +1,284 @@
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    background-color: #273f43 !important;
+    padding: 1rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: bisque !important;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #D2691E !important;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  
+  footer {
+    background-color: #273f43;
+    color: #ffffff;
+  }
+  
+  footer h5 {
+    color: #ff9a9e;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    color: #a0a0a0;
+  }
+  
+  .social-icons a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #ff9a9e;
+  }
+  
+  footer hr {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .text-centerss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50x;
+  }
+  
+  @media (max-width: 767px) {
+    footer .text-md-end {
+      text-align: center !important;
+    }
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    z-index: -1;
+}
+
+.hero .content {
+    text-align: center;
+    z-index: 1;
+}
+
+.hero .content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+*/
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+      font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+      font-size: 3.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;   /* Space above the section */
+    margin-bottom: 50px; /* Space below the section */
+    
+}
+
+.btn {
+    background-color: #b3b5b6;
+    color: black;
+    border: none;
+    padding: 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #9f40c5;
+    transform: scale(1.1);
+    color: white;
+}
+
+.btn:active {
+    background-color: #1c5d7e;
+    transform: scale(1);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .button-section {
+        flex-direction: column; /* Stack the buttons vertically */
+        gap: 20px; /* Reduce the gap between buttons */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Adjust the padding for smaller screens */
+        font-size: 14px; /* Reduce the font size */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-item {
+    margin-bottom: 30px;
+    background-color: transparent;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #2b2b29;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.8);
+  }
+  
+  @media (min-width: 992px) {
+    .gallery-item img {
+        height: 300px;
+    }
+  }
+
+
+
+
+
+
+
+
+
