@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Ganesh - Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="Gallery.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo (2).png" alt="Festive Planners Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Hero -->
+<section class="hero">
+    <img src="hero.jpg" alt="Background Image">
+    <div class="content">
+        <h1>Capturing Moments, Creating Memories - Explore Our Event Highlights</h1>
+        
+    </div>
+</section>
+
+<!-- Button -->
+<section class="button-section">
+    <button class="btn" onclick="showGallery('wedding')">Wedding Ceremony</button>
+    <button class="btn" onclick="showGallery('engagement')">Engagement Ceremony</button>
+    <button class="btn" onclick="showGallery('ganpati')">Ganpati Decoration</button>
+    <button class="btn" onclick="showGallery('birthday')">Birthday Party</button>
+    <button class="btn" onclick="showGallery('babyShower')">Baby Shower</button>
+    <button class="btn" onclick="showGallery('navratri')">Navratri Decoration</button>
+
+
+
+
+    <div class="row" id="gallery">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image1.jpg" alt="Gallery Image 1" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image10.jpg" alt="Gallery Image 2" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image15.jpg" alt="Gallery Image 3" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image16.jpg" alt="Gallery Image 4" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image18.jpg" alt="Gallery Image 5" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image2.jpg" alt="Gallery Image 6" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image23.jpg" alt="Gallery Image 7" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image27.jpg" alt="Gallery Image 9" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image32.jpg"alt="Gallery Image 10" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image36.jpg" alt="Gallery Image 11" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image6.jpg" alt="Gallery Image 12" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+            <img src="Image18.jpg" alt="Gallery Image 12" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallerySection">
+    <div class="row" id="gallery">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+    <footer class="py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Jay Ganesh Event Planners</h5>
+                    <p>We make your events memorable! From birthdays to festivals, we've got you covered.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Stay Connected</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Sr. No. 16/2, Saisiddhi Chowk, Ambegaon Pathar, Pune</p>
+                    <p><i class="fas fa-phone"></i> +91 8806699593</p>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9efffcfddef9f3fff7f2b0fdf1f3">[email&#160;protected]</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <hr class="mb-4">
+            <div class="text-centerss">
+                <p>&copy; Cybromatech Technology Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showGallery(category) {
+    const galleryImages = document.getElementById('gallery');
+    
+    // Clear previous images
+    galleryImages.innerHTML = '';
+
+    let images = [];
+
+    // Define images for each category
+    if (category === 'wedding') {
+        images = ['Image3.jpg', 'Image7.jpg','Image8.jpg', 'Image6.jpg', 'Image5.jpg', 'Image4.jpg', 'Image14.jpg', 'Image15.jpg', 'Image48.jpg', 'Image49.jpg','Image50.jpg','Image51.jpg',];
+    } else if (category === 'engagement') {
+        images = ['Image1.jpg', 'Image2.jpg', 'Image10.jpg', 'Image12.jpg', 'Image13.jpg', 'Image11.jpg', 'Image16.jpg', 'Image17.jpg', 'Image52.jpg', 'Image53.jpg', 'Image54.jpg', 'Image55.jpg',];
+    } else if (category === 'ganpati') {
+        images = ['Image18.jpg', 'Image19.jpg', 'Image20.jpg', 'Image21.jpg', 'Image22.jpg','Image23.jpg','Image24.jpg','Image25.jpg','Image56.jpg', 'Image57.jpg', 'Image58.jpg', 'Image59.jpg',];
+    } else if (category === 'birthday') {
+        images = ['Image26.jpg', 'Image27.jpg', 'Image28.jpg', 'Image29.jpg','Image30.jpg','Image31.jpg', 'Image32.jpg','Image33.jpg','Image60.jpg','Image61.jpg','Image62.jpg','Image63.jpg',];
+    
+    } else if (category === 'babyShower') {
+        images = ['Image34.jpg', 'Image35.jpg', 'Image36.jpg', 'Image37.jpg','Image38.jpg','Image39.jpg', 'Image40.jpg','Image41.jpg','Image64.jpg', 'Image65.jpg', 'Image66.jpg', 'Image67.jpg',];
+    } else if (category === 'navratri') {
+        images = ['Image42.jpg', 'Image43.jpg', 'Image44.jpg', 'Image45.jpg','Image46.jpg', 'Image47.jpg', 'Image68.jpg', 'Image69.jpg', 'Image70.jpg', 'Image71.jpg','Image72.jpg','Image73.jpg',];
+    }
+
+    // Add images to gallery
+    images.forEach(function(imgSrc) {
+        const colDiv = document.createElement('div');
+        colDiv.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'gallery-item');
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.alt = 'Gallery Image';
+        img.classList.add('img-fluid');
+        colDiv.appendChild(img);
+        galleryImages.appendChild(colDiv);
+    });
+}
+
+      
+    </script>
+</body>
+</html>
+

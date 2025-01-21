@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Ganesh - Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="ServicesStyles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo (2).png" alt="Jay Ganesh Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <section class="hero" style="background-image: url('hero.jpg');">
+        <div class="hero-overlay"></div>
+        <h1>Our Services</h1>
+        <div class="breadcrumb">
+             <span>Home</span> / <span>Our Services</span> 
+        </div>
+    </section> -->
+
+    <!-- Hero -->
+<section class="hero">
+    <img src="heroImgSect.jpg" alt="Background Image">
+    <div class="content">
+        <h1>Our Services</h1>
+        
+    </div>
+</section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Wedding Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="Wedding deco.jpg" class="card-img-top" alt="Wedding Ceremony">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Wedding Decoration</h5>
+                            <p class="card-text flex-grow-1">Elegant stage design, floral backdrops, aisle decor, centerpieces, and lighting arrangements. VIP seating and luxury furniture available.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engagement Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="engagement ceremony.jpg" class="card-img-top" alt="Engagement Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Engagement Decoration</h5>
+                            <p class="card-text flex-grow-1">Stylish stage setup with theme-based floral and balloon decorations. Entryway arches and photo booth arrangements.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Welcome Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="entrance decoration.jpg" class="card-img-top" alt="Welcome Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Welcome Decoration</h5>
+                            <p class="card-text flex-grow-1">Welcome Lord Ganesha with our stunning decorations. Traditional and modern designs available.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inauguration Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="inaugaration ceremony.jpg" class="card-img-top" alt="Inauguration Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Inauguration Decoration</h5>
+                            <p class="card-text flex-grow-1">Ribbon-cutting setups, balloon arches, floral garlands, and branding elements for special openings.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="birthday decoration.jpg" class="card-img-top" alt="Birthday Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Birthday Decoration</h5>
+                            <p class="card-text flex-grow-1">Balloon arches and themed welcome boards. Personalized theme, cake-cutting area, and seating arrangements.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="car decoration.jpg" class="card-img-top" alt="Car Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Car Decoration</h5>
+                            <p class="card-text flex-grow-1">Floral or artificial decorations for weddings or special occasions. Custom designs available.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Naming Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="naming ceremony.jpg" class="card-img-top" alt="Naming Ceremony">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Naming Decoration</h5>
+                            <p class="card-text flex-grow-1">Baby name designs with creative themes and floral decor. Customized arches and light effects.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baby-Shower Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="baby shower.jpg" class="card-img-top" alt="Baby Shower">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Baby-Shower Decoration</h5>
+                            <p class="card-text flex-grow-1">Elegant stage decor with baby-themed props and lighting. Entry gates and balloon decorations.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temple Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="temple decoration.jpg" class="card-img-top" alt="Temple Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Temple Decoration</h5>
+                            <p class="card-text flex-grow-1">Floral garlands, rangoli, and divine-themed arrangements for temples and religious events.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home-Entry Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="home entrance.jpg" class="card-img-top" alt="Home Entry Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Home-Entry Decoration</h5>
+                            <p class="card-text flex-grow-1">Customized floral garlands, lighting, and rangoli for home entrances.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home-Light Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="home lighting decoration.jpg" class="card-img-top" alt="Home Light Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Home-Light Decoration</h5>
+                            <p class="card-text flex-grow-1">LED, fairy lights, and color-coordinated lighting setups for a festive ambiance.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ganpati Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="ganpati decoration.jpg" class="card-img-top" alt="Ganpati Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Ganpati Decoration</h5>
+                            <p class="card-text flex-grow-1">Idols surrounded by vibrant original and artificial flowers. Themed backgrounds with lighting.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navratri Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="navratri decoration.jpg" class="card-img-top" alt="Navratri Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Navratri Decoration</h5>
+                            <p class="card-text flex-grow-1">Garba Events: Stage setup, lighting, and decor. High-power sound system and colorful lighting.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diwali-Light Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="DiwaliDec.jpg" class="card-img-top" alt="Diwali Light Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">Diwali-Light Decoration</h5>
+                            <p class="card-text flex-grow-1">Bright and intricate LED and string lights for houses and buildings during Diwali.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All-Shops Decoration -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="Shop Deco.jpg" class="card-img-top" alt="Shop Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">All-Shops Decoration</h5>
+                            <p class="card-text flex-grow-1">Customized balloon arches, lights, and branding decor for storefronts and retail spaces.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Republic & Independence Day -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card service-card h-100">
+                        <img src="independace day.jpg" class="card-img-top" alt="National Day Decoration">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-weight: bold; color: black;">National-Day Decoration</h5>
+                            <p class="card-text flex-grow-1">Tri-color themes, flags, floral decor, and sound systems for Republic & Independence Day events.</p>
+                            <button class="btn btn-primary view-packages mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <!-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+        Contact Us
+    </button>
+     -->
+
+    <footer class="py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Jay Ganesh Event Planners</h5>
+                    <p>We make your events memorable! From birthdays to festivals, we've got you covered.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Stay Connected</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Sr. No. 16/2, Saisiddhi Chowk, Ambegaon Pathar, Pune</p>
+                    <p><i class="fas fa-phone"></i> +91 8806699593</p>
+                    <p><i class="fas fa-envelope"></i> info@jayganeshevents.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <hr class="mb-4">
+            <div class="text-center">
+                <p>&copy; Cybromatech Technology Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ServicesScript.js"></script>
+</body>
+</html>
