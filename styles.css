@@ -1,5 +1,5 @@
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f0f0f0;
   background-size: cover;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #D2691E !important;
+  color: #d2691e !important;
 }
 
 .navbar-brand img {
@@ -88,7 +88,6 @@ body {
 .header-content p {
   font-size: 1.5rem;
 }
-
 
 footer {
   background-color: #273f43;
@@ -191,26 +190,51 @@ footer hr {
   }
 }
 
-
 .hero-title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.2;
-  color:darkgoldenrod;
+  color: darkgoldenrod;
 }
 
 .hero-text {
-  color: #FFE4E1;
-  font-weight: bolder;
-  font-size: 28px;
+  font-family: "Tiro Devanagari Marathi", serif;
+  color: #ffe4e1;
+  font-weight: 700;
+  font-size: 32px;
   margin-bottom: 30px;
   max-width: 500px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.hero-text-marathi {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+  margin-bottom: 30px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+}
 
+.hero-text-marathi:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-
+@media (max-width: 768px) {
+  .hero-text-marathi {
+    font-size: 28px;
+    padding: 15px;
+  }
+}
 
 /* Categories Grid */
 .categories-grid {
@@ -610,5 +634,102 @@ footer hr {
     width: 35px;
     height: 35px;
   }
+}
+
+/* Advertisement Section */
+.advertisement-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.ad-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ad-image {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ad-content {
+  width: 50%;
+  padding: 30px;
+}
+
+.ad-content h2 {
+  font-size: 2.5rem;
+  color: #273f43;
+  margin-bottom: 15px;
+}
+
+.ad-content p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.ad-content .btn-primary {
+  background-color: #ff9a9e;
+  border-color: #ff9a9e;
+  transition: all 0.3s ease;
+}
+
+.ad-content .btn-primary:hover {
+  background-color: #273f43;
+  border-color: #273f43;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .ad-container {
+    flex-direction: column;
+  }
+
+  .ad-image,
+  .ad-content {
+    width: 100%;
+  }
+
+  .ad-image {
+    height: 200px;
+  }
+
+  .ad-content {
+    padding: 20px;
+  }
+
+  .ad-content h2 {
+    font-size: 2rem;
+  }
+}
+
+.marathi-text {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marathi-text,
+.hero-text {
+  animation: fadeInUp 1s ease-out;
 }
 
